@@ -13,12 +13,13 @@ class Cuboid():
         self.height = height
 
     def get_surface(self):
-        surface =
+        surface = 2 * (self.length * self.width + self.length * self.height + self.width * self.height)
+        return surface
 
     def get_volume(self):
         volume = self.length * self.width * self.height
         return volume
 
 box = Cuboid(10, 20, 30)
-print(box.get_surface()) # should print 2200
+print("The surface of the box is", box.get_surface()) # should print 2200
 print("The volume of the box is", box.get_volume()) # should print 6000
