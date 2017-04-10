@@ -9,15 +9,15 @@ t = text.read()
 text.close()
 
 def count_as(filename):
-    number_of_as = 0
-    for letter in t:
-        if letter == "a" or letter == "A":
-            number_of_as += 1
-    return number_of_as
     try:
-        filename = open('filename.txt', 'r')
-    except:
-        print(0)
+        text = open(filename, 'r')
+        number_of_as = 0
+        for letter in t:
+            if letter == "a" or letter == "A":
+                number_of_as += 1
+        return number_of_as
+    except FileNotFoundError:
+        print("0")
 
 print(count_as("afile.txt")) # should print 28
 print(count_as("not-a-file")) # should print 0
