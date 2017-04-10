@@ -13,7 +13,7 @@ class Cuboid():
         self.height = height
 
     def get_surface(self):
-        pass
+        surface =
 
     def get_volume(self):
         volume = self.length * self.width * self.height
