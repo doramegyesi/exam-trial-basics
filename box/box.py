@@ -10,8 +10,15 @@ class Cuboid():
     def __init__(self, length, width, height):
         self.length = length
         self.width = width
-        self.heigth = height
+        self.height = height
+
+    def get_surface(self):
+        pass
+
+    def get_volume(self):
+        volume = self.length * self.width * self.height
+        return volume
 
 box = Cuboid(10, 20, 30)
 print(box.get_surface()) # should print 2200
-print(box.get_volume()) # should print 6000
+print("The volume of the box is", box.get_volume()) # should print 6000
