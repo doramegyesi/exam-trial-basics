@@ -7,11 +7,13 @@ pirates = [
 ]
 
 def list_taker():
+    list_of_dudes = []
     for pirate in pirates:
         if pirate["gold"] > 15 and pirate["has_wooden_leg"] == True:
-             print(pirate['Name'])
+            list_of_dudes.append(pirate["Name"])
+    return list_of_dudes
 
-list_taker()
+print(list_taker())
 
 # Write a function that takes any list that contains pirates as in the example,
 # And returns a list of names containing the pirates that
