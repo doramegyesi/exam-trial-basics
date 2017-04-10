@@ -9,8 +9,8 @@ t = text.read()
 text.close()
 
 def count_as(filename):
+    number_of_as = 0
     for letter in t:
-        number_of_as = 0
         if letter == "a" or letter == "A":
             number_of_as += 1
     return number_of_as

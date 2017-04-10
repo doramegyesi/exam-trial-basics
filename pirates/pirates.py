@@ -6,6 +6,20 @@ pirates = [
     {'Name': 'Hook', 'has_wooden_leg': True, 'gold': 20},
 ]
 
+def list_taker(dictionary):
+    for key in pirates:
+        if 'has_wooden_leg' == True:
+            print('name'(value))
+
+list_taker(pirates)
+
+        #    for key in pirate:
+#        print(key)
+#        print(pirate[key])
+
+#    for key, value in pirate.items():
+#        print(key + ": " + str(value))
+
 # Write a function that takes any list that contains pirates as in the example,
 # And returns a list of names containing the pirates that
 # - have wooden leg and
